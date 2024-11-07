@@ -24,19 +24,15 @@
             justify-content: center;
         }
 
-        /* Configuración de la imagen para que se ajuste sin dejar bordes */
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ajusta la imagen para que ocupe toda la pantalla */
-            background-color: #ffffff; /* Fondo opcional para los bordes */
+        /* Configuración del fondo para cubrir toda la pantalla sin dejar bordes */
+        body {
+            background-image: url('intento.png');
+            background-size: cover; /* Cubre toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat;
         }
     </style>
 </head>
 <body>
-    <img src="intento.png" alt="prueba">
 </body>
 </html>

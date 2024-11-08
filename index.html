@@ -17,26 +17,25 @@
         background-color: #000;
     }
 
-    /* Configuración del fondo para cubrir la pantalla */
+    /* Configuración del fondo para cubrir toda la pantalla */
     body {
         background-image: url('eeb837bf-0212-45e6-8f5d-9205dfc585b7.png');
-        background-size: cover;
-        background-position: center;
+        background-size: 100% 100%;  /* Estira la imagen para cubrir toda la pantalla */
+        background-position: top left;  /* Asegura que la imagen esté alineada desde la esquina superior izquierda */
         background-repeat: no-repeat;
-        witdh: auto;
     }
 
     /* Ajustes para pantallas grandes */
     @media (min-width: 1024px) {
         body {
-            background-size: contain;
+            background-size: 100% 100%;  /* Asegura que el fondo cubra toda la pantalla en pantallas grandes */
         }
     }
 
     /* Media query para pantallas pequeñas */
     @media (max-width: 768px) {
         body {
-            background-size: cover;
+            background-size: 100% 100%;  /* También ajustamos para pantallas pequeñas */
         }
     }
 

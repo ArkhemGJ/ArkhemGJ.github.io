@@ -25,25 +25,18 @@
             background-color: #000; /* Fondo para cuando la imagen no cubra toda la pantalla */
         }
 
-        /* Configuración del fondo para no recortar la imagen */
+        /* Configuración del fondo para cubrir la pantalla */
         body {
             background-image: url('eeb837bf-0212-45e6-8f5d-9205dfc585b7.png');
-            background-size: contain; /* La imagen se ajusta a la pantalla sin recortarse */
+            background-size: cover; /* La imagen cubre toda la pantalla */
             background-position: center; /* Centra la imagen */
             background-repeat: no-repeat; /* Evita la repetición de la imagen */
         }
 
-        /* Medias query para pantallas pequeñas como móviles */
+        /* Media query para pantallas pequeñas */
         @media (max-width: 768px) {
             body {
-                background-size: contain; /* Asegura que la imagen se ajuste sin recortarse */
-            }
-        }
-        
-        /* Medias query para pantallas más grandes */
-        @media (min-width: 769px) {
-            body {
-                background-size: cover; /* En pantallas grandes se utiliza cover para que cubra toda la pantalla */
+                background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
             }
         }
     </style>
